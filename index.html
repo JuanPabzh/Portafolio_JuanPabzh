@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juan Pablo Baza — Full Stack Developer</title>
+  <link rel="stylesheet" href="portafolio.css">
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <div class="nav-logo">JuanPabzh</div>
+      <div class="nav-links">
+        <a href="#inicio" class="nav-link">Inicio</a>
+        <a href="#servicios" class="nav-link">Servicios</a>
+        <a href="#proyectos" class="nav-link">Proyectos</a>
+        <a href="#habilidades" class="nav-link">Habilidades</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </div>
+      <button class="nav-menu-btn" id="menuBtn">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#inicio" class="mobile-link">Inicio</a>
+      <a href="#servicios" class="mobile-link">Servicios</a>
+      <a href="#proyectos" class="mobile-link">Proyectos</a>
+      <a href="#habilidades" class="mobile-link">Habilidades</a>
+      <a href="#contacto" class="mobile-link">Contacto</a>
+    </div>
+  </nav>
+
+  <section class="hero" id="inicio">
+    <div class="hero-bg">
+      <div class="hero-orb orb1"></div>
+      <div class="hero-orb orb2"></div>
+      <div class="grain"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-tag reveal">Desarrollador de Software · Full Stack</div>
+      <h1 class="hero-title reveal">
+        <span class="hero-name">Juan Pablo</span>
+        <span class="hero-name">Baza Hernandez</span>
+      </h1>
+      <p class="hero-phrase reveal">Tu negocio merece una presencia digital<br>que lo represente de verdad.</p>
+      <div class="hero-btns reveal">
+        <a href="#proyectos" class="btn btn-gold">Ver proyectos</a>
+        <a href="#contacto" class="btn btn-outline">Hablemos</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <section class="section" id="servicios">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Lo que ofrezco</div>
+        <h2 class="section-title">Servicios</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card reveal">
+          <div class="service-num">01</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <h3 class="service-title">Páginas Web para Negocios</h3>
+          <p class="service-desc">Sitios modernos, rápidos y con panel de administración. Tu negocio visible 24/7 con catálogo, WhatsApp integrado y base de datos.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-num">02</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3 class="service-title">Sistemas en Java</h3>
+          <p class="service-desc">Sistemas de escritorio completos con gestión de usuarios, autenticación segura, bases de datos y lógica de negocio a medida.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-num">03</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <h3 class="service-title">Ofimática & Excel</h3>
+          <p class="service-desc">Dashboards, reportes automáticos y plantillas profesionales. Transformo hojas de cálculo en herramientas de trabajo reales.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-num">04</div>
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          </div>
+          <h3 class="service-title">Sistemas Full Stack</h3>
+          <p class="service-desc">Aplicaciones completas de extremo a extremo. Interfaz web conectada a lógica de negocio y base de datos en producción.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark" id="proyectos">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Trabajo real</div>
+        <h2 class="section-title">Proyectos</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-img-wrap">
+            <img src="assets/logo-rapidcargo.png" alt="RapidCargo" class="project-logo-img">
+            <div class="project-overlay">
+              <span class="project-link-btn">Proyecto Privado</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tag">Escritorio</div>
+            <h3 class="project-title">RapidCargo</h3>
+            <p class="project-desc">Sistema de gestión logística para mensajería nacional. Autenticación segura, recuperación por correo, gestión de usuarios y base de datos.</p>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-img-wrap">
+            <img src="assets/logo-jlegacy.png" alt="JLegacy" class="project-logo-img">
+            <div class="project-overlay">
+              <a href="https://jlegacy.vercel.app" target="_blank" class="project-link-btn">Ver en vivo →</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tag">Web</div>
+            <h3 class="project-title">JLegacy Store</h3>
+            <p class="project-desc">Tienda online con dos líneas de productos. Panel admin oculto, base de datos en tiempo real, filtros interactivos y pedidos por WhatsApp.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="habilidades">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Tecnologías</div>
+        <h2 class="section-title">Habilidades</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <div class="skill-group-title">Backend & Bases de datos</div>
+          <div class="skill-list">
+            <div class="skill-item"><div class="skill-dot"></div>Java</div>
+            <div class="skill-item"><div class="skill-dot"></div>Spring Boot</div>
+            <div class="skill-item"><div class="skill-dot"></div>MySQL</div>
+            <div class="skill-item"><div class="skill-dot"></div>Supabase</div>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <div class="skill-group-title">Frontend & Web</div>
+          <div class="skill-list">
+            <div class="skill-item"><div class="skill-dot"></div>HTML5</div>
+            <div class="skill-item"><div class="skill-dot"></div>CSS3</div>
+            <div class="skill-item"><div class="skill-dot"></div>JavaScript</div>
+            <div class="skill-item"><div class="skill-dot"></div>Diseño Responsive</div>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <div class="skill-group-title">Herramientas</div>
+          <div class="skill-list">
+            <div class="skill-item"><div class="skill-dot"></div>Git & GitHub</div>
+            <div class="skill-item"><div class="skill-dot"></div>Vercel</div>
+            <div class="skill-item"><div class="skill-dot"></div>NetBeans</div>
+            <div class="skill-item"><div class="skill-dot"></div>VS Code</div>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <div class="skill-group-title">Ofimática</div>
+          <div class="skill-list">
+            <div class="skill-item"><div class="skill-dot"></div>Excel Avanzado</div>
+            <div class="skill-item"><div class="skill-dot"></div>Dashboards</div>
+            <div class="skill-item"><div class="skill-dot"></div>Automatizaciones</div>
+            <div class="skill-item"><div class="skill-dot"></div>Reportes</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-dark" id="contacto">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">¿Trabajamos juntos?</div>
+        <h2 class="section-title">Contacto</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-wrap">
+        <div class="contact-left reveal">
+          <p class="contact-desc">Estoy disponible para proyectos freelance. Páginas web para negocios, sistemas en Java, automatizaciones en Excel y más. Trabajo con compromiso y entrego resultados reales.</p>
+          <div class="contact-channels">
+            <a class="contact-channel wa-channel" href="https://wa.me/573244083274" target="_blank" rel="noopener">
+              <div class="channel-icon">
+                <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              </div>
+              <div class="channel-info">
+                <div class="channel-name">WhatsApp</div>
+                <div class="channel-handle">+57 324 408 3274</div>
+              </div>
+              <div class="channel-arrow">→</div>
+            </a>
+            <a class="contact-channel mail-channel" href="mailto:juanpabzh@gmail.com" target="_blank" rel="noopener">
+              <div class="channel-icon">
+                <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="channel-info">
+                <div class="channel-name">Correo</div>
+                <div class="channel-handle">juanpabzh@gmail.com</div>
+              </div>
+              <div class="channel-arrow">→</div>
+            </a>
+            <a class="contact-channel ig-channel" href="https://instagram.com/juanpabzh" target="_blank" rel="noopener">
+              <div class="channel-icon">
+                <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </div>
+              <div class="channel-info">
+                <div class="channel-name">Instagram</div>
+                <div class="channel-handle">@juanpabzh</div>
+              </div>
+              <div class="channel-arrow">→</div>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-right reveal">
+          <div class="contact-form-wrap">
+            <div class="form-tabs">
+              <button class="form-tab active" data-tab="wa">WhatsApp</button>
+              <button class="form-tab" data-tab="mail">Correo</button>
+            </div>
+            <div class="form-panel active" id="panel-wa">
+              <div class="form-group">
+                <label class="form-label">Tu nombre</label>
+                <input class="form-input" id="waNombre" placeholder="¿Cómo te llamas?">
+              </div>
+              <div class="form-group">
+                <label class="form-label">¿Qué necesitas?</label>
+                <textarea class="form-textarea" id="waMsg" placeholder="Cuéntame sobre tu proyecto..."></textarea>
+              </div>
+              <button class="btn btn-gold btn-full" id="btnWA">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Enviar por WhatsApp
+              </button>
+            </div>
+            <div class="form-panel" id="panel-mail">
+              <div class="form-group">
+                <label class="form-label">Tu nombre</label>
+                <input class="form-input" id="mailNombre" placeholder="¿Cómo te llamas?">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Tu correo</label>
+                <input class="form-input" id="mailCorreo" placeholder="tucorreo@ejemplo.com" type="email">
+              </div>
+              <div class="form-group">
+                <label class="form-label">¿Qué necesitas?</label>
+                <textarea class="form-textarea" id="mailMsg" placeholder="Cuéntame sobre tu proyecto..."></textarea>
+              </div>
+              <button class="btn btn-gold btn-full" id="btnMail">
+                <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                Enviar por Correo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">JuanPabzh</div>
+      <div class="footer-text">© 2026 Juan Pablo Baza · Valledupar, Colombia</div>
+    </div>
+  </footer>
+
+  <div class="float-btns">
+    <a class="float-btn float-mail" href="mailto:juanpabzh@gmail.com" aria-label="Correo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+    </a>
+    <a class="float-btn float-github" href="https://github.com/JuanPabzh" target="_blank" rel="noopener" aria-label="GitHub">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+    </a>
+    <a class="float-btn float-wa" href="https://wa.me/573244083274?text=Hola%20Juan%20Pablo!%20Vi%20tu%20portafolio." target="_blank" rel="noopener" aria-label="WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+    <a class="float-btn float-ig" href="https://instagram.com/juanpabzh" target="_blank" rel="noopener" aria-label="Instagram">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+    </a>
+  </div>
+
+  <script src="portafolio.js"></script>
+</body>
+</html>
