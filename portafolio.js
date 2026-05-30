@@ -1,4 +1,3 @@
-// ── CURSOR ──
 const cursor = document.getElementById('cursor');
 const cursorRing = document.getElementById('cursorRing');
 
@@ -16,13 +15,11 @@ if (window.matchMedia('(pointer: fine)').matches) {
   });
 }
 
-// ── NAV SCROLL ──
 const nav = document.getElementById('nav');
 window.addEventListener('scroll', () => {
   nav.classList.toggle('scrolled', window.scrollY > 40);
 });
 
-// ── MOBILE MENU ──
 const menuBtn = document.getElementById('menuBtn');
 const mobileMenu = document.getElementById('mobileMenu');
 
@@ -38,7 +35,6 @@ document.querySelectorAll('.mobile-link').forEach(link => {
   });
 });
 
-// ── REVEAL ON SCROLL ──
 const revealEls = document.querySelectorAll('.reveal');
 
 const observer = new IntersectionObserver((entries) => {
@@ -54,7 +50,6 @@ const observer = new IntersectionObserver((entries) => {
 
 revealEls.forEach(el => observer.observe(el));
 
-// ── FORM TABS ──
 document.querySelectorAll('.form-tab').forEach(tab => {
   tab.addEventListener('click', () => {
     document.querySelectorAll('.form-tab').forEach(t => t.classList.remove('active'));
@@ -64,7 +59,6 @@ document.querySelectorAll('.form-tab').forEach(tab => {
   });
 });
 
-// ── WHATSAPP CON MENSAJE ──
 document.getElementById('btnWA').addEventListener('click', () => {
   const nombre = document.getElementById('waNombre').value.trim();
   const msg = document.getElementById('waMsg').value.trim();
@@ -81,7 +75,6 @@ document.getElementById('btnWA').addEventListener('click', () => {
   window.open(`https://wa.me/573244083274?text=${encodeURIComponent(texto)}`, '_blank');
 });
 
-// ── CORREO CON MENSAJE ──
 document.getElementById('btnMail').addEventListener('click', () => {
   const nombre = document.getElementById('mailNombre').value.trim();
   const correo = document.getElementById('mailCorreo').value.trim();
@@ -100,7 +93,6 @@ document.getElementById('btnMail').addEventListener('click', () => {
   window.location.href = `mailto:juanpabzh@gmail.com?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
 });
 
-// ── ACTIVE NAV LINK ON SCROLL ──
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.nav-link');
 
@@ -114,4 +106,14 @@ window.addEventListener('scroll', () => {
       ? 'var(--gold-mid)'
       : '';
   });
+});
+
+const expandBtn = document.getElementById('expandBtn');
+const expandPanel = document.getElementById('expandPanel');
+
+expandBtn.addEventListener('click', () => {
+  expandBtn.classList.toggle('open');
+  expandPanel.classList.toggle('open');
+  expandBtn.querySelector('span').textContent =
+    expandBtn.classList.contains('open') ? 'Ocultar' : 'Ver qué incluye';
 });
